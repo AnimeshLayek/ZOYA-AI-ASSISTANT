@@ -18,7 +18,7 @@ def Flipkart():
         # Define the URL
         url = "https://www.flipkart.com/"
         # Set up Chrome options
-        chrome_driver_path = "D:\\code\\ZOYA\\chromedriver-win64\\chromedriver.exe"  # Write the path of chromedriver.exe file
+        chrome_driver_path = "ZOYA-AI-ASSESTANT\\chromedriver.exe"  # Write the path of chromedriver.exe file
         chrome_options = Options()
         chrome_options.headless = False #see to apening chrome
         #chrome_options.add_argument("--headless=new")
@@ -98,4 +98,5 @@ def Flipkart():
         print("Error: Unable to configure the ChromeDriver properly.")
         print("To resolve this error, make sure to set up the ChromeDriver correctly.")
         print(e) #print the error
+
 #Flipkart()
