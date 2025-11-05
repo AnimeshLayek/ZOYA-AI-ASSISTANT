@@ -16,7 +16,7 @@ try:
     url = "https://dictation.io/speech"
 
     # Set up Chrome options
-    chrome_driver_path = "ZOYA\\chromedriver-win64\\chromedriver.exe"  # Write the path of chromedriver.exe file
+    chrome_driver_path = "ZOYA-AI-ASSISTANT\\chromedriver.exe"  # Write the path of chromedriver.exe file
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")  #run the webiste in background
     chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -86,4 +86,5 @@ while True:
             file_write.close()
         sleep(1)
         # Click the "Clear" button to reset
+
         driver.find_element(by=By.XPATH, value=clear_button_xpath).click()
